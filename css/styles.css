@@ -15,10 +15,6 @@ ul {
     list-style-type: none;
 }
 
-/* li {
-    display: inline-block;
-} */
-
 a {
     text-decoration: none;
 }
@@ -71,6 +67,7 @@ header a:focus {
     font-weight: 900;
     font-size: 44px;
     line-height: 1.36;
+    text-transform: uppercase;
 }
 
 .hero-button {
@@ -84,15 +81,13 @@ header a:focus {
 }
 
 /* section advantages */
-.section-advantages h2 {
-    display: none;
-}
 
 .section-advantages h3 {
     color: var(--text-h-link);
     font-weight: 700;
     font-size: 14px;
     line-height: 1.17;
+    text-transform: uppercase;
 }
 
 .section-advantages p {
@@ -100,8 +95,9 @@ header a:focus {
     line-height: 1.71;
 }
 
-/* section work */
-.section-work h2 {
+
+/* common title */
+.section-title {
     color: var(--text-h-link);
     font-weight: 700;
     font-size: 36px;
@@ -117,18 +113,8 @@ header a:focus {
     background-color: var(--main-bgc);
 }
 
-.section-team h2,
 .section-team h3 {
     color: var(--text-h-link);
-}
-
-.section-team h2 {
-    font-weight: 700;
-    font-size: 36px;
-    line-height: 1.17;
-}
-
-.section-team h3 {
     font-weight: 500;
     font-size: 16px;
     line-height: 1.17;
@@ -180,9 +166,6 @@ footer a:focus {
 /* portfolio.html */
 
 /* section gallery */
-.section-gallery h1 {
-    display: none;
-}
 
 .section-gallery button {
     color: #212121;
@@ -200,6 +183,11 @@ footer a:focus {
     background-color: var(--axcent-primary-color);
 }
 
+.section-gallery .button-start {
+    color: var(--text-white);
+    background-color: var(--axcent-primary-color);
+}
+
 .section-gallery h2 {
     color: var(--text-h-link);
     font-weight: 700;
@@ -210,4 +198,19 @@ footer a:focus {
 .section-gallery p {
     font-size: 16px;
     line-height: 1.88;
+}
+
+
+.visually-hidden {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    border: 0;
+    padding: 0;
+
+    white-space: nowrap;
+    clip-path: inset(100%);
+    clip: rect(0 0 0 0);
+    overflow: hidden;
 }
