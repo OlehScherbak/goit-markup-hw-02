@@ -75,8 +75,7 @@ header a:focus {
 
 .hero-button {
     background-color: var(--axcent-primary-color);
-    color: #var(--text-white);
-    border-radius: 4px;
+    color: var(--text-white);
     cursor: pointer;
     font-weight: 700;
     font-size: 16px;
@@ -192,6 +191,7 @@ footer a:focus {
     font-size: 16px;
     line-height: 1.63;
     font-family: 'Roboto', sans-serif;
+    cursor: pointer;
 }
 
 .section-gallery button:hover,
